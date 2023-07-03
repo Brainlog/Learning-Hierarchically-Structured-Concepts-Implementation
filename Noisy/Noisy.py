@@ -70,8 +70,9 @@ class neuralNet:
                     if(neuron_potential>max_potential):
                         max_potential_neuron = i
                         max_potential = neuron_potential
-                self.update(curr_layer,max_potential_neuron,max_potential)
                 print(self.states)
+                
+            self.update(curr_layer,max_potential_neuron,max_potential)
             self.states[:][:] = 0
             print(self.states)
 
